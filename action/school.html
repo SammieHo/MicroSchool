@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="assets/js/flexible.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>校园圈</title>
+  </head>
+  <body>
+
+    <main id="panel" class="panel bgef">
+      <!-- 内容 -->
+      <section class="text-left" id="abcsssss">
+
+          <p class="header-box-title text-center">校园圈</p>
+
+          <ul class="list-group school">
+            <li class="list-group-item">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="assets/images/icon/wallet-icon.png">
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4 class="text-left">创业园</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="Exchange.php">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="assets/images/icon/dutybag-icon.png">
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4 class="text-left">校园二手市场</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="Lost.php">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="assets/images/icon/check-in-icon.png">
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4 class="text-left">失物招领</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="assets/images/icon/camera-icon.png">
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4 class="text-left">分享交流圈</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="assets/images/icon/air-balloon-icon.png">
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4 class="text-left">联谊</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+          </ul>
+
+          <!-- 发布的按钮 -->
+          <ul id="navs" data-open="×" data-close="发布">
+            <li><a href="PostExchange.php">闲置</a></li>
+            <li><a href="PostLost.php">失物</a></li>
+            <li><a href="#">分享</a></li>
+            <li><a href="#">联谊</a></li>
+          </ul>
+
+          <!-- 悬浮 发布 btn -->
+          <script type="text/javascript">
+          (function(){
+            var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=120;
+            ul.click(function(){
+              $(this).toggleClass('active');
+              if($(this).hasClass('active')){
+                for(var a=0;a<i;a++){
+                  li.eq(a).css({
+                    'transition-delay':""+(50*a)+"ms",
+                    '-webkit-transition-delay':""+(50*a)+"ms",
+                    '-o-transition-delay':""+(50*a)+"ms",
+                    'transform':"translate("+(r*Math.cos(90/n*a*(Math.PI/180)))+"px,"+(-r*Math.sin(90/n*a*(Math.PI/180)))+"px",
+                    '-webkit-transform':"translate("+(r*Math.cos(90/n*a*(Math.PI/180)))+"px,"+(-r*Math.sin(90/n*a*(Math.PI/180)))+"px",
+                    '-o-transform':"translate("+(r*Math.cos(90/n*a*(Math.PI/180)))+"px,"+(-r*Math.sin(90/n*a*(Math.PI/180)))+"px",
+                    '-ms-transform':"translate("+(r*Math.cos(90/n*a*(Math.PI/180)))+"px,"+(-r*Math.sin(90/n*a*(Math.PI/180)))+"px"
+                  });
+                }
+              }else{
+                li.removeAttr('style');
+              }
+            });
+          })($);
+          </script>
+      </section>
+
+    </main>
+
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="assets/js/flexible.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>课程表</title>
+</head>
+
+<body>
+    <main id="panel" class="panel bgef">
+        <!-- 内容 -->
+        <section class="text-left" id="abcsssss">
+            <p class="header-box-title text-center">
+                <a href="javascript:history.go(-1);" class="pull-left"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                课程表
+                <!-- 添加课程 -->
+                <a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+            </p>
+            <!-- 发布弹出框 -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content text-left">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">添加课程信息</h4>
+                        </div>
+                        <form action="">
+                        <div class="modal-body color333">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <p>课程名称：</p>
+                                <input class="form-control" type="date" placeholder="WEB前端开发">
+                                <p>任课老师：</p>
+                                <input class="form-control" type="date" placeholder="何bb">
+                                <p>节数：</p>
+                                <input type="text" class="form-control" placeholder="周一 3.4节">
+                                <p>地点：</p>
+                                <input type="text" class="form-control" placeholder="南一A403">
+                            </div>
+                        </div>
+                        <!-- 操作btn -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <!-- <button type="button" >发布</button> -->
+                            <input type="submit" class="btn btn-primary" value="添加">
+                        </div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+
+            <ol class="breadcrumb text-left classphone">
+              <li><a href="#">2013级</a></li>
+              <li><a href="#">信息科学与工程学院</a></li>
+              <li class="active">信管2班</li>
+            </ol>
+
+            <div class="classtable classphone">
+                <table class="table table-bordered table-striped table-condensed text-left">
+                    <thead class="">
+                        <th>#</th>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                        <th>周六</th>
+                        <th>周日</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.2</td>
+                            <td> </td>
+                            <td ><a href="kaoqin.html">服务器配置与管理.刘永初.南一A403</a></td>
+                            <td >管理信息系统分析与设计.李文全.信工321</td>
+                            <td></td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+              
+                        <tr>
+                            <td>3.4</td>
+                            <td >管理信息系统分析与设计.李文全.南一A204</td>
+                            <td >人力资源管理.刘茹.南一A403</td>
+                            <td >人力资源管理.刘茹.南一A401</td>
+                            <td >管理信息系统分析与设计.李文全.南一A403</td>
+                            <td >管理信息系统分析与设计.李文全.信工318</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                 
+                        <tr>
+                            <td>5.6</td>
+                            <td> </td>
+                            <td >数据仓库与数据挖掘.龙腾芳.南一A403</td>
+                            <td> </td>
+                            <td >数据仓库与数据挖掘.龙腾芳.南一A403</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+               
+                        <tr>
+                            <td>7.8</td>
+                            <td> </td>
+                            <td >项目管理实践.饶浩.南一A403</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td>9.10</td>
+                            <td> </td>
+                            <td >项目管理实践.饶浩.南一A403</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                 
+                    </tbody>
+                  
+                </table>
+            </div>
+
+            <!-- 页码 -->
+            <!-- <nav>
+              <ul class="pagination pagination-sm">
+                <li class="disabled">
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> -->
+
+
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

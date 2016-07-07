@@ -1,0 +1,107 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="assets/js/flexible.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>考试倒计时</title>
+</head>
+
+<body>
+    <main id="panel" class="panel bgef">
+        <!-- 内容 -->
+        <section class="text-left" id="abcsssss">
+            <p class="header-box-title text-center">
+                <!-- 后退 -->
+                <a href="javascript:history.go(-1);"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>考试倒计时
+                <!-- 发布班费情况 -->
+                <a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+            </p>
+            <!-- 发布弹出框 -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content text-left">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">倒计时添加</h4>
+                        </div>
+                        <form action="">
+                            <div class="modal-body color333">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <p>考试科目：</p>
+                                    <input class="form-control" type="date" placeholder="英语四六级">
+                                    <p>考试时间：</p>
+                                    <input class="form-control"  type="date" placeholder="2016-06-19">
+                                </div>
+                            </div>
+                            <!-- 操作btn -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <!-- <button type="button" >发布</button> -->
+                                <input type="submit" class="btn btn-primary" value="添加">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 班级信息 -->
+            <ol class="breadcrumb text-left classphone">
+                <li><a href="#">2013级</a></li>
+                <li><a href="#">信息科学与工程学院</a></li>
+                <li class="active">信管2班</li>
+            </ol>
+
+            <!-- 每一个section代表一条倒计时信息 -->
+            <section class="content secondhand">
+                <a href="secondhandContent.html">
+                    <div class="container media content-mb">
+                        <div class="media-body text-left">
+                            <div class="media-heading ">
+                                英语四六级
+                            </div>
+                            <h5>2016-06-19 周日 07:00</h5>
+                        </div>
+                        <div class="media-right delaytime">
+                            <div class="pull-right delaytimeT">还剩</div>
+                            <div class="pull-right redprice">53天</div>
+                        </div>
+                    </div>
+            </section> 
+
+            <!-- 每一个section代表一条倒计时信息 -->
+            <section class="content secondhand">
+                <a href="secondhandContent.html">
+                    <div class="container media content-mb">
+                        <div class="media-body text-left">
+                            <div class="media-heading ">
+                                英语四六级
+                            </div>
+                            <h5>2016-06-19 周日 07:00</h5>
+                        </div>
+                        <div class="media-right delaytime">
+                            <div class="pull-right delaytimeT">还剩</div>
+                            <div class="pull-right redprice">53天</div>
+                        </div>
+                    </div>
+            </section> 
+
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

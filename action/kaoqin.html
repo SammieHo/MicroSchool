@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="assets/js/flexible.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>考勤统计</title>
+</head>
+
+<body>
+    <main id="panel" class="panel bgef">
+        <!-- 内容 -->
+        <section class="text-left" id="abcsssss">
+            <p class="header-box-title text-center">
+                <!-- 后退 -->
+                <a href="javascript:history.go(-1);"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a> 考勤统计
+                <!-- 发布班费情况 -->
+                <a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+            </p>
+            <!-- 发布弹出框 -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content text-left">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">考勤登记</h4>
+                        </div>
+                        <form action="">
+                            <div class="modal-body color333">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <!-- 应到人数，默认读取班级总人数 -->
+                                    <p>应到：</p>
+                                    <input class="form-control" type="date" value="43">
+                                    <!-- 实到，实际出勤人数 -->
+                                    <p>实到：</p>
+                                    <input class="form-control" type="date" placeholder="43">
+                                    <p>请假：</p>
+                                    <input class="form-control" type="date" value="0">
+                                    <p>旷课：</p>
+                                    <input class="form-control" type="date" value="0">
+                                    <p>迟到：</p>
+                                    <input class="form-control" type="date" value="0">
+                                    <p>备注：</p>
+                                    <textarea class="form-control" rows="3" placeholder="请假：ABB(事假)、ACC(病假);旷课：ADD、AEE;迟到：AFF、AGG"></textarea>
+
+                                </div>
+                            </div>
+                            <!-- 操作btn -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <input type="submit" class="btn btn-primary" value="登记">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 班级 -->
+            <ol class="breadcrumb text-left classphone">
+                <li><a href="#">2013级</a></li>
+                <li><a href="#">信息科学与工程学院</a></li>
+                <li class="active">信管2班</li>
+            </ol>
+            <!-- 通告显示的地方 -->
+            <div class="panel panel-default studyinfo">
+                <!-- Default panel contents -->
+                <div class="panel-heading" style="font-size:14px">04/26&nbsp;&nbsp; 应到:43 &nbsp;&nbsp;实到:43&nbsp;&nbsp; 请假:0 &nbsp;&nbsp;旷课:0&nbsp;&nbsp; 迟到:0 </div>
+                <!-- 如果备注为空，就隐藏下面的panel-body -->
+                <div class="panel-body" style="font-size:16px" >
+                    <p>请假：ABB(事假)、ACC(病假);</p>
+                    <p>旷课：ADD、AEE;</p>
+                    <p>迟到：AFF、AGG </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
